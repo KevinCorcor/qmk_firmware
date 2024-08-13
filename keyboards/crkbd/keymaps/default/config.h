@@ -30,6 +30,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 //#define QUICK_TAP_TERM 0
 //#define TAPPING_TERM 100
+// Configure the global tapping term (default: 200ms)
+#define TAPPING_TERM 200
+
+// Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
+#define QUICK_TAP_TERM 0
 
 #ifdef RGBLIGHT_ENABLE
     #define RGBLIGHT_EFFECT_BREATHING
