@@ -21,7 +21,7 @@ static td_tap_t xtap_state = {
     .state = TD_NONE
 };
 td_state_t cur_dance(tap_dance_state_t *state);
-void handle_state(td_state_t state, void (*registrar)(uint8_t), uint16_t key_taps[]);
+void handle_state(td_state_t state, void (*registrar)(uint8_t), uint8_t key_taps[]);
 
 td_state_t cur_dance(tap_dance_state_t *state) {
     if (state->count == 1) {
@@ -46,7 +46,7 @@ td_state_t cur_dance(tap_dance_state_t *state) {
     } else return TD_UNKNOWN;
 }
 
-void handle_state(td_state_t state, void (*registrar)(uint8_t), uint16_t key_taps[]) {
+void handle_state(td_state_t state, void (*registrar)(uint8_t), uint8_t key_taps[]) {
     switch (state) {
         case TD_SINGLE_TAP: registrar(key_taps[0]); break;
         case TD_SINGLE_HOLD: registrar(key_taps[1]); break;

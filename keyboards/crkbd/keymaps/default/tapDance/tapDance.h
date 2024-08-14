@@ -6,10 +6,8 @@ enum {
     VOLS_MAN
 };
 
-uint16_t PROGMEM esclocks_key_taps[] = { KC_ESC, KC_NO, KC_CAPS, KC_NO, KC_NUM, KC_NO };
-uint16_t PROGMEM sound_key_taps[] = { KC_MUTE, KC_VOLD, KC_NO, KC_VOLU, KC_NO, KC_NO };
-
-
+uint8_t PROGMEM esclocks_key_taps[] = { KC_ESC, KC_NO, CW_TOGG, KC_CAPS, KC_NUM, KC_NO };
+uint8_t PROGMEM sound_key_taps[] = { KC_MUTE, KC_VOLD, KC_NO, KC_VOLU, KC_NO, KC_NO };
 
 // For the x tap dance. Put it here so it can be used in any keymap
 void x_finished(tap_dance_state_t *state, void *user_data);
