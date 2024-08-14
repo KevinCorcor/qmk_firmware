@@ -19,18 +19,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include QMK_KEYBOARD_H
 #include <tapDance/tapDance.h>
 #include <homeRow/homeRow.h>
+#include <macros/macros.h>
 #include <combos/combos.h>
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_split_3x6_3(
-    TD(ESC_LOCK), KC_Q,   KC_W,   KC_F,   KC_P,   KC_B,   /*|-------|*/   KC_Y,   KC_L,   KC_U,     KC_Y,     KC_QUOT,  _______,
+    TD(ESC_LCKS), KC_Q,   KC_W,   KC_F,   KC_P,   KC_B,   /*|-------|*/   KC_Y,   KC_L,   KC_U,     KC_Y,     KC_QUOT,  _______,
     TD(VOLS_MAN), A_GUI,  R_ALT,  S_SFT,  T_CTL,  KC_G,   /*|-------|*/   KC_M,   N_CTL,  E_SFT,    I_ALT,    O_GUI,    _______,
     _______,      KC_Z,   KC_X,   KC_C,   KC_D,   KC_V,   /*|-------|*/   KC_K,   KC_H,   KC_COMM,  KC_DOT,   KC_SLSH,  _______,
                               _______,   _______,  KC_BSPC, /*|---|*/ KC_SPC,   KC_ENT, _______
   ),
   [1] = LAYOUT_split_3x6_3(
     KC_GRV,   KC_EXLM,  KC_LCBR,  KC_RCBR,  _______,  KC_HASH,  /*|-------|*/   _______,  KC_HOME,  KC_PGDN,  KC_PGUP,  KC_END,     _______,
-    KC_PIPE,  KC_AMPR,  KC_LPRN,  KC_RPRN,  KC_SCLN,  KC_BSLS,  /*|-------|*/   _______,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RIGHT,   ______,
+    KC_PIPE,  KC_AMPR,  KC_LPRN,  KC_RPRN,  KC_SCLN,  KC_BSLS,  /*|-------|*/   _______,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RIGHT,   _______,
     KC_AT,    KC_DLR,   KC_LBRC,  KC_RBRC,  KC_UNDS,  _______,  /*|-------|*/   _______,  KC_UNDO,  _______,  _______,  C(KC_Z),    _______,
                                    _______,  _______,  KC_BSPC,   /*|---|*/   KC_SPC,   KC_ENT,   _______
   ),
