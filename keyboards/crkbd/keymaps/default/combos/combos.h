@@ -5,7 +5,7 @@ enum combos {
 };
 
 const uint16_t PROGMEM qw_combo[] = {KC_Q, KC_W, COMBO_END};
-const uint16_t PROGMEM escq_combo[] = {KC_ESC, KC_Q, COMBO_END};
+const uint16_t PROGMEM escq_combo[] = {TD(ESC_LCKS), KC_Q, COMBO_END};
 
 combo_t key_combos[] = {
   [ESC_LOCK] = COMBO(escq_combo, LGUI(KC_L)),
