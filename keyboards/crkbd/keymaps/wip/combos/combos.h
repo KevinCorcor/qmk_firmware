@@ -18,10 +18,10 @@ const uint16_t PROGMEM xc_combo[] = {KC_X, KC_C, COMBO_END};
 
 combo_t key_combos[] = {
   [ESC_LOCK] = COMBO(escq_combo, LGUI(KC_L)),
-  [QP_EMLS] = COMBO(qp_combo, EML_SIG),
-  [QW_UNDO] = COMBO(qw_combo, C(KC_Z)),
-  [FP_REDO] = COMBO(fp_combo, RCS(KC_Z)),
-  [ZX_COPY] = COMBO(zx_combo, C(KC_C)),
-  [XC_CUT] = COMBO(xc_combo, C(KC_X)),
-  [CD_PSTE] = COMBO(cd_combo, C(KC_V)),
+  [QP_EMLS]  = COMBO(qp_combo, EML_SIG),
+  [QW_UNDO]  = COMBO(qw_combo, C(KC_Z)),
+  [FP_REDO]  = COMBO(fp_combo, RCS(KC_Z)),
+  [ZX_COPY]  = COMBO(zx_combo, C(KC_C)),
+  [XC_CUT]   = COMBO(xc_combo, C(KC_X)),
+  [CD_PSTE]  = COMBO(cd_combo, C(KC_V)),
 };

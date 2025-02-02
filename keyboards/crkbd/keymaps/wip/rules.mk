@@ -1,9 +1,12 @@
 CONVERT_TO				= promicro_rp2040
+BOOTLOADER 				= rp2040
 TAP_DANCE_ENABLE 		= yes
 PERMISSIVE_HOLD 		= yes
 MOUSEKEY_ENABLE 		= no     # Mouse keys
-VIA_ENABLE      		= yes    # Enable VIA
+VIA_ENABLE      		= no    # Enable VIA
 LTO_ENABLE      		= no	 # smaller output
-COMBO_ENABLE 			= yes
+COMBO_ENABLE 			= no
 CAPS_WORD_ENABLE 		= yes
+SRC 					+= casemodes/casemodes.c
 DEFERRED_EXEC_ENABLE 	= yes
+#CONSOLE_ENABLE 			= yes

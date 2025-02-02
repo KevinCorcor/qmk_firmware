@@ -48,3 +48,15 @@ void handle_state(td_state_t state, void (*registrar)(uint8_t), uint8_t key_taps
         default: break;
     }
 }
+
+void handle_state16(td_state_t state, void (*registrar)(uint16_t), uint16_t key_taps[]) {
+    switch (state) {
+        case TD_SINGLE_TAP: registrar(key_taps[0]); break;
+        case TD_SINGLE_HOLD: registrar(key_taps[1]); break;
+        case TD_DOUBLE_TAP: registrar(key_taps[2]); break;
+        case TD_DOUBLE_HOLD: registrar(key_taps[3]); break;
+        case TD_TRIPLE_TAP: registrar(key_taps[4]); break;
+        case TD_TRIPLE_HOLD: registrar(key_taps[5]); break;
+        default: break;
+    }
+}
