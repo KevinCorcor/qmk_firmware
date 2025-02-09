@@ -4,12 +4,7 @@ enum custom_keycodes {
     EML_SIG = SAFE_RANGE,
     EML_LIVE,
     EML_G,
-    XCASE,
-    ESC_LCKS,
-    VOLS_MAN,
-    AMPR_TD,
-    RPRN_TD,
-    LPRN_TD
+    XCASE
 };
 
 #include <tapDance/tapDance.h>

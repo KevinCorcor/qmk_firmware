@@ -1,5 +1,14 @@
 #include <tapDance/tapDanceCustom.h>
 
+enum {
+    ESC_LCKS,
+    VOLS_MAN,
+    RPRN_TD,
+    AMPR_TD,
+    LPRN_TD,
+    OSM_LT1
+};
+
 uint8_t PROGMEM esclocks_key_taps[] = { KC_ESC, KC_NO, KC_CAPS, KC_NO, KC_NUM, KC_NO };
 uint8_t PROGMEM sound_key_taps[] = { KC_MUTE, KC_VOLD, KC_NO, KC_VOLU, KC_NO, KC_NO };
 uint16_t PROGMEM LPRN_key_taps[] = { S(KC_9), KC_LALT, KC_NO, KC_NO, KC_NO, KC_NO };
