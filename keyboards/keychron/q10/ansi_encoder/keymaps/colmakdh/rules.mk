@@ -1,1 +1,11 @@
 ENCODER_MAP_ENABLE = yes
+TAP_DANCE_ENABLE 		= yes
+PERMISSIVE_HOLD 		= yes
+MOUSEKEY_ENABLE 		= no     # Mouse keys
+VIA_ENABLE      		= no    # Enable VIA
+LTO_ENABLE      		= no	 # smaller output
+COMBO_ENABLE 			= yes
+CAPS_WORD_ENABLE 		= yes
+SRC 					+= casemodes/casemodes.c
+DEFERRED_EXEC_ENABLE 	= yes
+#CONSOLE_ENABLE 			= yes
