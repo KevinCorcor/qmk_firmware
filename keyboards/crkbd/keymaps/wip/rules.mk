@@ -1,4 +1,4 @@
-CONVERT_TO				= promicro_rp2040
+CONVERT_TO				= sparkfun_pm2040
 BOOTLOADER 				= rp2040
 TAP_DANCE_ENABLE 		= yes
 PERMISSIVE_HOLD 		= yes

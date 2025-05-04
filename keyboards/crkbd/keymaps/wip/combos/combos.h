@@ -5,7 +5,8 @@ enum combos {
   FP_REDO,
   ZX_COPY,
   XC_CUT,
-  CD_PSTE
+  CD_PSTE,
+  DH_XCASE
 };
 
 const uint16_t PROGMEM escq_combo[] = {TD(ESC_LCKS), KC_Q, COMBO_END};
@@ -15,6 +16,7 @@ const uint16_t PROGMEM qp_combo[] = {KC_Q, KC_P, COMBO_END};
 const uint16_t PROGMEM zx_combo[] = {KC_Z, KC_X, COMBO_END};
 const uint16_t PROGMEM cd_combo[] = {KC_C, KC_D, COMBO_END};
 const uint16_t PROGMEM xc_combo[] = {KC_X, KC_C, COMBO_END};
+const uint16_t PROGMEM dh_combo[] = {KC_D, KC_H, COMBO_END};
 
 combo_t key_combos[] = {
   [ESC_LOCK] = COMBO(escq_combo, LGUI(KC_L)),
@@ -24,4 +26,5 @@ combo_t key_combos[] = {
   [ZX_COPY]  = COMBO(zx_combo, C(KC_C)),
   [XC_CUT]   = COMBO(xc_combo, C(KC_X)),
   [CD_PSTE]  = COMBO(cd_combo, C(KC_V)),
+  [DH_XCASE]  = COMBO(dh_combo, XCASE),
 };
